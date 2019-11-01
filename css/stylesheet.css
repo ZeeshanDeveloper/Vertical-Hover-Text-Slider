@@ -1,0 +1,187 @@
+/*Style sheet*/
+/**/@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,500,600,700');
+/*font-family: 'Fira Sans Condensed', sans-serif;*/
+
+/*general*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../img/slider.jpg);
+    background-size: cover;
+}
+h1 {
+    margin:0px;
+}
+h2 {
+    margin:0px;
+}
+h3 {
+    margin:0px;
+}
+a {
+    text-decoration:none;
+    color:initial;
+}
+a:hover {
+    text-decoration:none;
+    color:initial;
+}
+p {
+    margin-bottom:0px;
+}
+ul {
+    margin:0px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111;
+}
+/*HOME*/
+.txt{
+  margin: 0px;
+  color: white;
+  text-transform: uppercase;
+  background: rgb(1, 11, 33);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0px;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    height: 100vh;
+    position:relative;
+    z-index:2;
+}
+    .main-content p {
+        text-align: center;
+        font-size: 180px;
+        text-transform: uppercase;
+        letter-spacing: -6px;
+        display: inline-block;
+        overflow:hidden;
+        height: 186px;
+        margin:0px;
+        color: #010b21;
+    }
+    .main-content .we {
+      text-transform: uppercase;
+      width: 303px;
+      margin: auto;
+      font-size: 20px;
+      font-weight: 600;
+      -webkit-animation-name: logo-text2;
+      -webkit-animation-duration: 1s;
+      animation-name: logo-text2;
+      animation-duration: 1s;
+      animation-delay: 3.9s;
+      -webkit-animation-delay: 3.9s;
+      color: #010b21;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .main-content .we i{
+      font-style: normal;
+      background: white;
+      padding: 1px 11px;
+    }
+    .main-content .wor {
+        text-transform: uppercase;
+        width: 600px;
+        margin: auto;
+        font-size: 20px;
+    }
+.main-content.black .wor {
+    color: #eee;
+}
+    .main-content.black p span {
+        color:#eee;
+    }
+        .main-content p span {
+            -ms-transform: translatey(0%);
+            -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+            position: relative;
+            display: block;
+            line-height: 186px;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+        }
+            .main-content p span.scroll {
+                font-size: 74px;
+                letter-spacing: -3px;
+            }
+            .main-content p span.gone{
+                -ms-transform: translatey(-100%);
+                -webkit-transform: translatey(-100%);
+                transform: translatey(-100%);
+            }
+            .main-content p span.coming{
+                -ms-transform: translatey(100%);
+                -webkit-transform: translatey(100%);
+                transform: translatey(100%);
+            }
+            .main-content p span i {
+                font-style: normal;
+                position:relative;
+                display:inline-block;
+            }
+                .main-content p span i {
+                    -webkit-animation-name: logo-animate1;
+                    -webkit-animation-duration: 1s;
+                    animation-name: logo-animate1;
+                    animation-duration: 1s;
+                    animation-delay:3.9s;
+                    -webkit-animation-delay:3.9s;
+                    /*color:#7681a0;*/
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                }
+                .main-content p span i:nth-child(2){
+                    -webkit-animation-name: example2;
+                    -webkit-animation-duration: 4s;
+                    animation-name: example2;
+                    animation-duration: 4s;
+                    /*color:#bec3c9;*/
+                }
+@media  (min-width:0px) and (max-width:568px) {
+  .main-content p{
+    height: 80px;
+    font-size: 68px;
+    letter-spacing: 0px;
+  }
+  .main-content p span{
+    line-height: 80px;
+    color: #e8e8e8;
+    font-size: 17px;
+  }
+  .main-content p span.scroll {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+  .main-content .we{
+    text-align: center;
+    font-weight: 400;
+  }
+}
